@@ -9,7 +9,7 @@ const passport = require('passport'); // Required before the database models
 require('./app_api/models/db');
 require('./app_api/config/passport'); // Configuration after the database models
 
-var indexRouter = require('./app_server/routes/index');
+// var indexRouter = require('./app_server/routes/index');
 var usersRouter = require('./app_server/routes/users');
 var apiRouter = require('./app_api/routes/index');
 
@@ -38,7 +38,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'app_public', 'build')));
 app.use(passport.initialize());
 
-app.use('/', indexRouter);
+// app.use('/', indexRouter);
 app.use('/api', apiRouter);
 app.use('/users', usersRouter);
 

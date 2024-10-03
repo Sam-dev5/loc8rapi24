@@ -9,7 +9,7 @@ const passport = require('passport'); // Required before the database models
 require('./app_api/models/db');
 require('./app_api/config/passport'); // Configuration after the database models
 
-// var indexRouter = require('./app_server/routes/index');
+var indexRouter = require('./app_server/routes/index');
 var usersRouter = require('./app_server/routes/users');
 var apiRouter = require('./app_api/routes/index');
 
